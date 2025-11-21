@@ -5,12 +5,12 @@
 class Msg2eml < Formula
   desc "Convert Outlook MSG files to EML format"
   homepage "https://github.com/mubix/msg2eml"
-  version "1.4"
+  version "1.5"
   license "MIT"
 
   on_macos do
-    url "https://github.com/mubix/msg2eml/releases/download/v1.4/msg2eml_1.4_Darwin_all.tar.gz"
-    sha256 "bb01164858de144b3be752e90307ca04b2b00f6d0069c2ff49f8397143d9fa88"
+    url "https://github.com/mubix/msg2eml/releases/download/v1.5/msg2eml_1.5_Darwin_all.tar.gz"
+    sha256 "a6211d3179c4be2ae58be4fe1c2069a0ec51fbad4236dffecda5aeab1acc0aba"
 
     def install
       bin.install "msg2eml"
@@ -20,8 +20,8 @@ class Msg2eml < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mubix/msg2eml/releases/download/v1.4/msg2eml_1.4_Linux_x86_64.tar.gz"
-        sha256 "6f6200e5090de17c397212b45fed430897b9d9a241ccacaf6b4e1538990f2554"
+        url "https://github.com/mubix/msg2eml/releases/download/v1.5/msg2eml_1.5_Linux_x86_64.tar.gz"
+        sha256 "13c7fa81cdabfc0a984d8e1c2c610558ad285662bb455dc1d7027cfa3f58789f"
 
         def install
           bin.install "msg2eml"
@@ -30,8 +30,8 @@ class Msg2eml < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mubix/msg2eml/releases/download/v1.4/msg2eml_1.4_Linux_arm64.tar.gz"
-        sha256 "d3af24f9b30c057a508e52c514715a94a2c7f29c7e137715f94941c4c1d71692"
+        url "https://github.com/mubix/msg2eml/releases/download/v1.5/msg2eml_1.5_Linux_arm64.tar.gz"
+        sha256 "08a06e2d00dc05616ec3f435ba8fd71088eae729b0fbba24486ac252e5a73d73"
 
         def install
           bin.install "msg2eml"
