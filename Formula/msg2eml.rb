@@ -5,12 +5,12 @@
 class Msg2eml < Formula
   desc "Convert Outlook MSG files to EML format"
   homepage "https://github.com/mubix/msg2eml"
-  version "1.10"
+  version "1.11"
   license "MIT"
 
   on_macos do
-    url "https://github.com/mubix/msg2eml/releases/download/v1.10/msg2eml_1.10_Darwin_all.tar.gz"
-    sha256 "0cf820422a5a98177bd3636ccd1a76634a6011f470f18e23b599303521918b16"
+    url "https://github.com/mubix/msg2eml/releases/download/v1.11/msg2eml_1.11_Darwin_all.tar.gz"
+    sha256 "fe952b524200915088e7a7d6b76d4f82500c7c8559605099c91924cd1bc2dd18"
 
     def install
       bin.install "msg2eml"
@@ -20,8 +20,8 @@ class Msg2eml < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mubix/msg2eml/releases/download/v1.10/msg2eml_1.10_Linux_x86_64.tar.gz"
-        sha256 "7b4cebf595d30da0cda9d906098a94f7b96e7c602fd084a3b7ab8b82351fa8d2"
+        url "https://github.com/mubix/msg2eml/releases/download/v1.11/msg2eml_1.11_Linux_x86_64.tar.gz"
+        sha256 "baea860ee796c3cc2f817b6c080491c063204c60556e64a0dff31a40e45a8a52"
 
         def install
           bin.install "msg2eml"
@@ -30,8 +30,8 @@ class Msg2eml < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mubix/msg2eml/releases/download/v1.10/msg2eml_1.10_Linux_arm64.tar.gz"
-        sha256 "859aabcc5d7585a77cdce9b37093d336203b7245d74fbf45df910b1f87ed2293"
+        url "https://github.com/mubix/msg2eml/releases/download/v1.11/msg2eml_1.11_Linux_arm64.tar.gz"
+        sha256 "6c0ee46df8b5c0c2bba4a1556f87b11c4d31f77d078ef0005aa8d736587b39ff"
 
         def install
           bin.install "msg2eml"
